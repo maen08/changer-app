@@ -20,14 +20,14 @@ class RegisterUser(View):
 
 
 class UserRegister(generic.CreateView):
-    template_name = ''
+    template_name = 'static/login'
     model = ChangerUser
     form_class = UserRegisterForm
     success_url = reverse_lazy('')
 
 
 class UserLoginView(generic.FormView):
-    template_name = ''
+    template_name = 'static/login.html'
     form_class = UserLogin
     success_url = ''
 
