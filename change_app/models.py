@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class Change(models.Model):
+    pass
+
+
+class ChangeCategory(models.Model):
+    pass
