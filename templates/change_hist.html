@@ -1,46 +1,65 @@
 <html>
-	<head><<title>changehistory</title>/head>
-	<body>
-		
-		<h1 class="font-style">
-			CHANGE HISTORY
-		</h1>
+	<head>
+		<title>changehistory</title>
+		<meta charset="utf-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="./static/change_hist.css">
+
+	</head>
+
+	<body class="body-colour">
+
+	<div class="header">
+		<h1>Change History</h1>
+	</div>
 
 
-	<div class="container">
-  <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
-  <ul class="responsive-table">
-    <li class="table-header">
-      <div class="col col-1">Job Id</div>
-      <div class="col col-2">Customer Name</div>
-      <div class="col col-3">Amount Due</div>
-      <div class="col col-4">Payment Status</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42235</div>
-      <div class="col col-2" data-label="Customer Name">John Doe</div>
-      <div class="col col-3" data-label="Amount">$350</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42442</div>
-      <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-      <div class="col col-3" data-label="Amount">$220</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42257</div>
-      <div class="col col-2" data-label="Customer Name">John Smith</div>
-      <div class="col col-3" data-label="Amount">$341</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42311</div>
-      <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-      <div class="col col-3" data-label="Amount">$115</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-  </ul>
+	<div class="container table-responsive py-5"> 
+
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Change From</th>
+      <th scope="col">Change amount</th>
+      <th scope="col">Change Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">09/01/2021</th>
+      <td>Mark</td>
+      <td>10,000/=</td>
+      <td>Received</td>
+    </tr>
+    <tr>
+      <th scope="row">09/01/2021</th>
+      <td>Jacob</td>
+      <td>10,000/=</td>
+      <td>Pending</td>
+    </tr>
+    <tr>
+      <th scope="row">09/01/2021</th>
+      <td>Larry</td>
+      <td>10,000/=</td>
+      <td>Received</td>
+    </tr>
+     <tr>
+      <th scope="row">09/01/2021</th>
+      <td>Larry</td>
+      <td>10,000/=</td>
+      <td>Received</td>
+    </tr>
+    <tr>
+      <th scope="row">09/01/2021</th>
+      <td>Larry</td>
+      <td>10,000/=</td>
+      <td>Received</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+
 	</body>
 </html>
