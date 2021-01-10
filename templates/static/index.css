@@ -50,9 +50,17 @@ section {
 
 .table td {
     /* width: 30px !important; */
-    padding: 10px 200px;
+    padding: 10px 150px;
     padding-left: 20px;
     font-size: 40px;
+}
+
+.table td input {
+    width: 100px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
 }
 
 /* .table  {
@@ -60,7 +68,7 @@ section {
 } */
 
 .table .amount-times {
-    border-bottom: 1px solid grey;   
+    /* border-bottom: 1px solid grey;    */
     padding: 10px 20px;
 }
 
