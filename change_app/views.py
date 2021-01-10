@@ -4,18 +4,27 @@ from forms import TotalAmountForm, MultiplierForm
 
 
 def request_change(request):
-    # multiplier = request.POST.get('multiplier')
-    # print(multiplier)
+    multiplier = request.POST.get('multiplier')
+    obj = Amount()
+    obj.multiplier = multiplier
+    obj.save()
 
-    if request.method == 'POST':
-        multiplier = MultiplierForm(request.POST)
-        if multiplier.is_valid():
-            multiplier.save()
+    # Amount(multiplier=multiplier)
 
-        total_amount = TotalAmountForm(request.POST)
-        # print(total_amount.values)
-        if total_amount.is_valid():
-            total_amount.save()
+    print(multiplier)
+    total = request.POST.get('total')
+    obj.total_amount = total
+    obj.save()
+
+    # if request.method == 'POST':
+    #     multiplier = MultiplierForm(request.POST)
+    #     if multiplier.is_valid():
+    #         multiplier.save()
+
+    #     total_amount = TotalAmountForm(request.POST)
+    #     # print(total_amount.values)
+    #     if total_amount.is_valid():
+    #         total_amount.save()
 
     multiplier = MultiplierForm()
     total_amount = TotalAmountForm()
@@ -24,6 +33,6 @@ def request_change(request):
     args = {
         'whole_amount': whole_amount,
         'multiplier': multiplier,
-        'total_amount': total_amount,
+        'total': total,
     }
     return render(request, template_name='index.html', context=args)

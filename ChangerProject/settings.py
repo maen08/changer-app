@@ -43,6 +43,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ChangerProject.urls'
 
+AUTH_USER_MODEL = 'user_app.ChangerUser'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
