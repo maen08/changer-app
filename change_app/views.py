@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Amount
 from forms import TotalAmountForm, MultiplierForm
+from django.contrib.auth.models import  User
 
 
 def request_change(request):
@@ -16,15 +17,6 @@ def request_change(request):
     obj.total_amount = total
     obj.save()
 
-    # if request.method == 'POST':
-    #     multiplier = MultiplierForm(request.POST)
-    #     if multiplier.is_valid():
-    #         multiplier.save()
-
-    #     total_amount = TotalAmountForm(request.POST)
-    #     # print(total_amount.values)
-    #     if total_amount.is_valid():
-    #         total_amount.save()
 
     multiplier = MultiplierForm()
     total_amount = TotalAmountForm()
@@ -36,3 +28,16 @@ def request_change(request):
         'total': total,
     }
     return render(request, template_name='index.html', context=args)
+
+
+def history_view(request):
+    user = User.objects.get(username=request.user)
+    details = Amount.objects.all()
+  
+    args = {
+       'details':details,
+        'user': user,
+
+    }
+
+    return render(request, template_name='change_hist.html', context=args)

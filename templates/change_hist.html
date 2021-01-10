@@ -28,35 +28,18 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">09/01/2021</th>
-      <td>Mark</td>
-      <td>10,000/=</td>
+      {% for detail in details %}
+      <th scope="row">{{ detail.timestamp }}</th>
+
+     
+      <td>{{ user.username }}</td>
+
+      <td>{{ detail.total_amount }}</td>
       <td>Received</td>
     </tr>
-    <tr>
-      <th scope="row">09/01/2021</th>
-      <td>Jacob</td>
-      <td>10,000/=</td>
-      <td>Pending</td>
-    </tr>
-    <tr>
-      <th scope="row">09/01/2021</th>
-      <td>Larry</td>
-      <td>10,000/=</td>
-      <td>Received</td>
-    </tr>
-     <tr>
-      <th scope="row">09/01/2021</th>
-      <td>Larry</td>
-      <td>10,000/=</td>
-      <td>Received</td>
-    </tr>
-    <tr>
-      <th scope="row">09/01/2021</th>
-      <td>Larry</td>
-      <td>10,000/=</td>
-      <td>Received</td>
-    </tr>
+    {% endfor %}
+
+
   </tbody>
 </table>
 </div>
