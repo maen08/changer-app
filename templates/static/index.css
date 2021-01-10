@@ -1,0 +1,83 @@
+section {
+    padding: 20px;
+}
+
+.center-horizontal {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.change-request-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.change-request-input input {
+    font-size: 25px;
+    padding: 25px 20px;
+    width: 80%;
+}
+
+.right-container button, .right-container form {
+    margin-bottom: 20px;
+}
+
+.right-container button {
+    font-size: 30px;
+}
+
+
+.right-container form input {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.table {
+    /* width: 50%; */
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.table tbody {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table td {
+    /* width: 30px !important; */
+    padding: 10px 150px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+.table td input {
+    width: 100px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+/* .table  {
+    display: flex;
+} */
+
+.table .amount-times {
+    /* border-bottom: 1px solid grey;    */
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
