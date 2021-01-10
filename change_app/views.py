@@ -41,3 +41,10 @@ def history_view(request):
     }
 
     return render(request, template_name='change_hist.html', context=args)
+
+
+def change_provider_view(request):
+
+
+    
+    return render(request, template_name='provider.html')
